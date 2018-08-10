@@ -27,10 +27,14 @@ public class Lab4_DavidAriel {
         do {
             switch (menu()) {
                 case 1:
-                    //lista de evas
+                    for (int i = 0; i < e.size(); i++) {
+                        System.out.println(e);
+                    }
                     break;
                 case 2:
-                    //lista de angeles
+                    for (int i = 0; i < a.size(); i++) {
+                        System.out.println(a);
+                    }
 
                     break;
                 case 3:
