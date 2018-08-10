@@ -175,36 +175,26 @@ public class Lab4_DavidAriel {
     }//Fin del menu
 
     public static void crear() {
- 
-        for (int i = 0; i < 4; i++) {
-      
-        }
-        for (int i = 0; i < 4; i++) {
-          
-        }
-        for (int i = 0; i < 2; i++) {
-            System.out.println("camvia aqui");
-        }
-        e.add(new EVA01(9, 4, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
+        a.add(new Ramiel(0,2,Color.yellow, "Un angel muy fuerte", "2/ago/1998", "rammy", "si", 200));
+        a.add(new Ramiel(0,7,Color.LIGHT_GRAY, "legendario", "3/sep/2003", "randy", "si", 400));
+        a.add(new Sachiel(1,4,Color.RED, "hijo de el mismo adan", "4/ene/2007", "sachy", "si", 600));
+        a.add(new Sachiel(1,5,Color.yellow, "te destruyen", "20/septiembre/1994", "sach", "si", 100));
 
-        a.add(new Ramiel(0, 2, Color.yellow, "Un angel muy fuerte", "2/ago/1998", "rammy", "si", 200));
-        a.add(new Ramiel(0, 7, Color.LIGHT_GRAY, "legendario", "3/sep/2003", "randy", "si", 400));
-        a.add(new Sachiel(1, 4, Color.RED, "hijo de el mismo adan", "4/ene/2007", "sachy", "si", 600));
-        a.add(new Sachiel(1, 5, Color.yellow, "te destruyen", "20/septiembre/1994", "sach", "si", 100));
+        a.add(new Zeruel(1,1,Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
+        a.add(new Zeruel(3,2,Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
+        a.add(new Zeruel(3,7,Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
+        a.add(new Zeruel(1,8,Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
 
-        a.add(new Zeruel(1, 1, Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
-        a.add(new Zeruel(3, 2, Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
-        a.add(new Zeruel(3, 7, Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
-        a.add(new Zeruel(1, 8, Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
+        
+            e.add(new EVAPM(9,0,Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
+            e.add(new EVAPM(9,2,Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
+            e.add(new EVAPM(9,7,Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
+            e.add(new EVAPM(9,9,Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
+        
 
-        e.add(new EVAPM(9, 0, Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
-        e.add(new EVAPM(9, 2, Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
-        e.add(new EVAPM(9, 7, Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
-        e.add(new EVAPM(9, 9, Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
-
-        e.add(new EVA00(7, 2, Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
-        e.add(new EVA00(9, 6, Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
-
+            e.add(new EVA00(7,2,Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
+            e.add(new EVA00(9,6,Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
+        
         e.add(new EVA01(9, 4, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
 
     }
