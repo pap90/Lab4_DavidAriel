@@ -36,8 +36,8 @@ public class Zeruel extends Angel{
         int x=sc.nextInt();
         System.out.println("Ingrese la coordenada y: ");
         int y=sc.nextInt();
-        if (x==(this.x)+1||(this.x)-1==x) {
-            if (this.y+1==y||this.y-1==y) {
+        if (x==(this.x)+2||(this.x)-2==x) {
+            if (this.y+2==y||this.y-2==y) {
                 matriz[this.y][this.x]=null;
                 this.y=y;
                 this.x=x;
