@@ -78,6 +78,11 @@ public class Lab4_DavidAriel {
                                 System.out.println("5.escuela");
                                 System.out.println("6.porcentaje");
                                 System.out.println("7.eva asiganado");
+                                System.out.println("Lea la opcion:");
+                                int p = leer.nextInt();
+                                
+                                
+                                
                                 break;
                             case 3:
 
