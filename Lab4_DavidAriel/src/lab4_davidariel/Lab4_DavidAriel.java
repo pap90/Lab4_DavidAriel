@@ -5,6 +5,8 @@
  */
 package lab4_davidariel;
 
+import java.awt.Color;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -12,11 +14,13 @@ import java.util.Scanner;
  * @author david
  */
 public class Lab4_DavidAriel {
-
+    static ArrayList<Evas> e=new ArrayList();
+    static ArrayList<Angel> a=new ArrayList();
     static Scanner leer = new Scanner(System.in);
     static int opcion;
 
     public static void main(String[] args) {
+        crear();
         char resp = 's';
         do {
             switch (menu()) {
@@ -72,5 +76,14 @@ public class Lab4_DavidAriel {
         return opcion;
 
     }//Fin del menu
-
+    public static void crear(){
+        a.add(new Ramiel(Color.yellow, "Un angel muy fuerte", "2/ago/1998", "rammy", "si", 200));
+        a.add(new Ramiel(Color.LIGHT_GRAY, "legendario", "3/sep/2003", "randy", "si", 400));
+        a.add(new Sachiel(Color.RED, "hijo de el mismo adan", "4/ene/2007", "sachy", "si", 600));
+        a.add(new Sachiel(Color.yellow, "te destruyen", "20/septiembre/1994", "sach", "si", 100));
+        for (int i = 0; i < 4; i++) {
+            a.add(new Zeruel(Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
+        }
+        
+    }
 }
