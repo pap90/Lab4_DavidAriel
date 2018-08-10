@@ -41,8 +41,8 @@ public class EVA01 extends Evas{
         int x=sc.nextInt();
         System.out.println("Ingrese la coordenada y: ");
         int y=sc.nextInt();
-        if (x==(this.x)+1||(this.x)-1==x) {
-            if (this.y+1==y||this.y-1==y) {
+        if (x==(this.x)+3||(this.x)-3==x) {
+            if (this.y+3==y||this.y-3==y) {
                 matriz[this.y][this.x]=null;
                 this.y=y;
                 this.x=x;

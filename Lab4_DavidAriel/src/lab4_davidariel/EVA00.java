@@ -19,9 +19,13 @@ public class EVA00 extends Evas{
         super();
     }
 
-    public EVA00(Color color, double anio, double altura, String alma, int ojos, String pais, pilotos pilot, int codigo, double porcentaje) {
+    public EVA00(int y, int x, Color color, double anio, double altura, String alma, int ojos, String pais, pilotos pilot, int codigo, double porcentaje) {
         super(color, anio, altura, alma, ojos, pais, pilot, codigo, porcentaje);
+        this.y = y;
+        this.x = x;
     }
+
+    
 
     @Override
     public String toString() {

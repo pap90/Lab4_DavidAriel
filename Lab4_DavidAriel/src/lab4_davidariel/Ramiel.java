@@ -20,9 +20,13 @@ public class Ramiel extends Angel{
     super();
     }
 
-    public Ramiel(Color color, String descripcion, String fechaencontrado, String nombre, String volar, int potenciaAT) {
+    public Ramiel(int y, int x, Color color, String descripcion, String fechaencontrado, String nombre, String volar, int potenciaAT) {
         super(color, descripcion, fechaencontrado, nombre, volar, potenciaAT);
+        this.y = y;
+        this.x = x;
     }
+
+    
 
     @Override
         public void moverse(Object[][] matriz){
