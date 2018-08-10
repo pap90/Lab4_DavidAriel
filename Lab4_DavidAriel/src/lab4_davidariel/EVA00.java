@@ -27,7 +27,7 @@ public class EVA00 extends Evas{
     public String toString() {
         return "EVA00"+super.toString();
     }
-<<<<<<< HEAD
+
     @Override
     public void moverse(Object[][] matriz){
         Scanner sc=new Scanner(System.in);
@@ -47,9 +47,6 @@ public class EVA00 extends Evas{
         };        
     }
     
-=======
-   
->>>>>>> 7e11f61d3170c90de2f1b4b0866d2a767814081f
-    
+  
     
 }
