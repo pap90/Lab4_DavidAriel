@@ -97,7 +97,7 @@ public class Angel extends Ancestral{
     }
 
     @Override
-    public void moverse(String x, String y, Object[][] matriz) {
+    public void moverse(Object[][] matriz) {
         
     }
 

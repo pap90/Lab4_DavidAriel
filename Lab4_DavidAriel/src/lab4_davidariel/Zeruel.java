@@ -23,12 +23,12 @@ public class Zeruel extends Angel{
     }
 
     @Override
-    public void moverse(String x, String y, Object[][] matriz){
+    public void moverse(Object[][] matriz){
         Scanner sc=new Scanner(System.in);
         System.out.println("ingrese la coordenada x: ");
-        x=sc.next();
+        
         System.out.println("Ingrese coordenada y: ");
-        y=sc.next();
+        
     }
     @Override
     public void atacar(){

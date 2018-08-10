@@ -42,7 +42,7 @@ public class Lab4_DavidAriel {
                 default:
                     System.out.println("Ingreso una opcion equivocada");
             }//fin del switch
-            System.out.println("desea quedarse en el programa? [S/N]:");
+            System.out.println("desea quedarse en el programa?[S/N]:");
             resp = leer.next().charAt(0);
 
         } while (resp == 'S' || resp == 's');

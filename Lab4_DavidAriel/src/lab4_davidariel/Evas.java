@@ -113,7 +113,7 @@ public class Evas extends Ancestral {
     
 
     @Override
-    public void moverse(String x, String y, Object[][] matriz) {
+    public void moverse(Object[][] matriz) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
