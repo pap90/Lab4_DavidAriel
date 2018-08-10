@@ -6,6 +6,7 @@
 package lab4_davidariel;
 
 import java.awt.Color;
+import java.util.Scanner;
 
 /**
  *
@@ -25,6 +26,7 @@ public class EVA00 extends Evas{
     public String toString() {
         return "EVA00"+super.toString();
     }
+   
     
     
 }
