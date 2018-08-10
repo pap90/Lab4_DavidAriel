@@ -80,9 +80,13 @@ public class Lab4_DavidAriel {
                                 System.out.println("7.eva asiganado");
                                 System.out.println("Lea la opcion:");
                                 int p = leer.nextInt();
+                                System.out.println("Ingrese la posicion:");
+                                int w = leer.nextInt();
                                 
-                                
-                                
+                                for (int i = 0; i < pilot.size(); i++) {
+
+                                }
+
                                 break;
                             case 3:
 
@@ -127,7 +131,7 @@ public class Lab4_DavidAriel {
                     imprimir(mat);
                     break;
                 case 5:
-                    System.out.println("Se termino todo");
+                    System.out.println("Se termino todo :(");
                     break;
                 default:
                     System.out.println("Ingreso una opcion equivocada");
@@ -185,7 +189,6 @@ public class Lab4_DavidAriel {
             e.add(new EVA00(Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
         }
         e.add(new EVA01(9, 4, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
-        
 
     }
 
