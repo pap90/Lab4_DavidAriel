@@ -5,10 +5,25 @@
  */
 package lab4_davidariel;
 
+import java.awt.Color;
+
 /**
  *
  * @author ariel
  */
 public class Evas {
+
+    private Color color;
+    private double anio;
+    private double altura;
+    private String alma;
+    private int ojos;
+    private String pais;
+    private pilotos pilot;
+    private int codigo;
+    private double porcentaje;
     
-}
+    
+
+
+}//fin de la clase

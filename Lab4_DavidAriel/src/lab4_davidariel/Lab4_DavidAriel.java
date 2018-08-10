@@ -16,6 +16,26 @@ public class Lab4_DavidAriel {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        
+        
+        
+        
     }
-    
+
+    static void imprimirMatriz(String[][] mat) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (mat[i][j] == (null)) {
+                    System.out.print("[" + " " + "]");
+                } else {
+                    System.out.print("[" + mat[i][j] + "]");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+
 }
