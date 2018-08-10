@@ -10,8 +10,6 @@ package lab4_davidariel;
  * @author david
  */
 public abstract class Ancestral {
-    public void moverse(){
-    }
-    public void atacar(){
-    }
+    public abstract void moverse(String x ,String y ,Object[][] matriz);
+    public abstract void atacar();
 }

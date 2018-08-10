@@ -25,10 +25,10 @@ public class Angel extends Ancestral{
     
     
 
-    public Angel(Color color, String descripcion, Color sangre, String fechaencontrado, String nombre, String volar, int potenciaAT) {
+    public Angel(Color color, String descripcion, String fechaencontrado, String nombre, String volar, int potenciaAT) {
         this.color = color;
         this.descripcion = descripcion;
-        this.sangre = sangre;
+        this.sangre = Color.BLUE;
         this.fechaencontrado = fechaencontrado;
         this.nombre = nombre;
         this.volar = volar;
@@ -95,7 +95,18 @@ public class Angel extends Ancestral{
     public String toString() {
         return "Angel{" + "color=" + color + ", descripcion=" + descripcion + ", sangre=" + sangre + ", fechaencontrado=" + fechaencontrado + ", nombre=" + nombre + ", volar=" + volar + ", potenciaAT=" + potenciaAT + '}';
     }
-    
+
+    @Override
+    public void moverse(String x, String y, Object[][] matriz) {
+        
+    }
+
+    @Override
+    public void atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
     
     
 }
