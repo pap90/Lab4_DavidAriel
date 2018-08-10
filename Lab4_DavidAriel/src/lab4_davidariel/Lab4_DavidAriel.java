@@ -27,9 +27,10 @@ public class Lab4_DavidAriel {
                 case 3:
                     break;
                 case 4:
-                    //crud para los pilotos
+                    Object mat[][] = new Object[11][11];
+                    imprimir(mat);
                     
-                    
+
                     break;
                 case 5:
                     System.out.println("Se termino todo");
