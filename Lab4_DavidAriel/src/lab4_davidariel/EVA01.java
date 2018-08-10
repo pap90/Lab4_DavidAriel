@@ -46,11 +46,10 @@ public class EVA01 extends Evas{
                 matriz[this.y][this.x]=null;
                 this.y=y;
                 this.x=x;
+                matriz[y][x]=this;
             }
-            matriz[y][x]=this;
-        }
-        ;
-        
+            
+        };        
     }
     @Override
     public void atacar(){

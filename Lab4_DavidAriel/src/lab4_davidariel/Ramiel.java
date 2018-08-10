@@ -13,6 +13,8 @@ import java.util.Scanner;
  * @author david
  */
 public class Ramiel extends Angel{
+    private int y;
+    private int x;
 
     public Ramiel() {
     super();
@@ -23,12 +25,22 @@ public class Ramiel extends Angel{
     }
 
     @Override
-    public void moverse(Object[][] matriz){
+        public void moverse(Object[][] matriz){
         Scanner sc=new Scanner(System.in);
-        System.out.println("ingrese la coordenada x: ");
-        
-        System.out.println("Ingrese coordenada y: ");
-        
+        System.out.println("tip: solo puede mover un espacio");
+        System.out.println("Ingrese coordenada x: ");
+        int x=sc.nextInt();
+        System.out.println("Ingrese la coordenada y: ");
+        int y=sc.nextInt();
+        if (x==(this.x)+1||(this.x)-1==x) {
+            if (this.y+1==y||this.y-1==y) {
+                matriz[this.y][this.x]=null;
+                this.y=y;
+                this.x=x;
+                matriz[y][x]=this;
+            }
+            
+        };        
     }
     @Override
     public void atacar(){
