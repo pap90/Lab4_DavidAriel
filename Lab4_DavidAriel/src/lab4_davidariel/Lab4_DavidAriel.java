@@ -28,12 +28,12 @@ public class Lab4_DavidAriel {
             switch (menu()) {
                 case 1:
                     for (int i = 0; i < e.size(); i++) {
-                        System.out.println(e);
+                        System.out.println(e.get(i).toString());
                     }
                     break;
                 case 2:
                     for (int i = 0; i < a.size(); i++) {
-                        System.out.println(a);
+                        System.out.println(a.get(i).toString());
                     }
 
                     break;
@@ -78,7 +78,6 @@ public class Lab4_DavidAriel {
                                 System.out.println("5.escuela");
                                 System.out.println("6.porcentaje");
                                 System.out.println("7.eva asiganado");
-
                                 break;
                             case 3:
 
@@ -175,5 +174,11 @@ public class Lab4_DavidAriel {
             a.add(new Zeruel(Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
         }
 
+    }
+
+    static void validar(int x, int y) throws errores {
+        if (x < 0 || y < 0) {
+            throw new errores(Color.ORANGE);
+        }
     }
 }
