@@ -173,6 +173,14 @@ public class Lab4_DavidAriel {
         for (int i = 0; i < 4; i++) {
             a.add(new Zeruel(Color.yellow, "fox", "21/marzo/2000", "zezima", "si", 4000));
         }
+        for (int i = 0; i < 4; i++) {
+            e.add(new EVAPM(Color.yellow, 1997, 200, "shinji", 10, "Honduras", null, 203, 0));
+        }
+        for (int i = 0; i < 2; i++) {
+            e.add(new EVA00(Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
+        }
+        e.add(new EVA01(9, 4, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
+        
 
     }
 
