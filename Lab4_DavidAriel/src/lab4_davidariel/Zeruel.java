@@ -20,9 +20,13 @@ public class Zeruel extends Angel{
         super();
     }
 
-    public Zeruel(Color color, String descripcion, String fechaencontrado, String nombre, String volar, int potenciaAT) {
+    public Zeruel(int y, int x, Color color, String descripcion, String fechaencontrado, String nombre, String volar, int potenciaAT) {
         super(color, descripcion, fechaencontrado, nombre, volar, potenciaAT);
+        this.y = y;
+        this.x = x;
     }
+
+    
 
     @Override
         public void moverse(Object[][] matriz){

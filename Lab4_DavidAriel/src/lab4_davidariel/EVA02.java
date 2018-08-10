@@ -19,9 +19,13 @@ public class EVA02 extends Evas{
     public EVA02() {
     }
 
-    public EVA02(Color color, double anio, double altura, String alma, int ojos, String pais, pilotos pilot, int codigo, double porcentaje) {
+    public EVA02(int y, int x, Color color, double anio, double altura, String alma, int ojos, String pais, pilotos pilot, int codigo, double porcentaje) {
         super(color, anio, altura, alma, ojos, pais, pilot, codigo, porcentaje);
+        this.y = y;
+        this.x = x;
     }
+
+    
 
     @Override
     public String toString() {
@@ -35,13 +39,12 @@ public class EVA02 extends Evas{
         int x=sc.nextInt();
         System.out.println("Ingrese la coordenada y: ");
         int y=sc.nextInt();
-        if (x==(this.x)+1||(this.x)-1==x) {
-            if (this.y+1==y||this.y-1==y) {
+        if ((x==this.x&&this.y!=y)||(x!=this.x&&y==this.y)) {
                 matriz[this.y][this.x]=null;
                 this.y=y;
                 this.x=x;
                 matriz[y][x]=this;
-            }
+            
             
         };        
     }
