@@ -69,6 +69,13 @@ public class Lab4_DavidAriel {
                                 System.out.println("Se ha creado un nuevo piloto");
                                 break;
                             case 2:
+                                int cont=0;
+                                for (int i = 0; i < pilot.size(); i++) {
+                                    System.out.println("piloto numero "+cont + pilot.get(i).toString());
+                                    cont++;
+                                }
+                                System.out.println("Que piloto desea modificar?: ");
+                                int p=leer.nextInt();
                                 System.out.println("Es hora de modificar algo:");
                                 System.out.println("Ingrese lo que desee modificar:");
                                 System.out.println("1.Nombre");
@@ -79,14 +86,46 @@ public class Lab4_DavidAriel {
                                 System.out.println("6.porcentaje");
                                 System.out.println("7.eva asiganado");
                                 System.out.println("Lea la opcion:");
-                                int p = leer.nextInt();
-                                System.out.println("Ingrese la posicion:");
-                                int w = leer.nextInt();
-
-                                for (int i = 0; i < pilot.size(); i++) {
-
+                                int pe = leer.nextInt();
+                                switch (pe) {
+                                    case 1:
+                                        System.out.println("Ingrese nuevo nombre: ");
+                                        String nn=leer.next();
+                                        pilot.get(p).setNombre(nn);
+                                        break;
+                                    case 2:
+                                        System.out.println("ingrese nueva edad: ");
+                                        int ne=leer.nextInt();
+                                        pilot.get(p).setEdad(ne);
+                                        break;
+                                    case 3:
+                                        System.out.println("Ingrese nuevo familiar: ");
+                                        String nf=leer.next();
+                                        pilot.get(p).setFamiliar(nf);
+                                        break;
+                                    case 4:
+                                        System.out.println("Ingrese el nuevo encargado: ");
+                                        String nen=leer.next();
+                                        pilot.get(p).setEncargado(nen);
+                                        break;
+                                    case 5:
+                                        System.out.println("Ingrese nueva escuela: ");
+                                        String nes=leer.next();
+                                        pilot.get(p).setEscuela(nes);
+                                        break;
+                                    case 6:
+                                        System.out.println("Ingrese nuevo porcentaje de compatibilidad: ");
+                                        double np=leer.nextDouble();
+                                        pilot.get(p).setSincronizacion(np);
+                                        break;
+                                    case 7:
+                                        System.out.println("asignele un eva prro :v ");
+                                        String nev=leer.next();
+                                        pilot.get(p).setAsignado(nev);
+                                        break;
+                                    default:
+                                        
                                 }
-
                                 break;
                             case 3:
 
