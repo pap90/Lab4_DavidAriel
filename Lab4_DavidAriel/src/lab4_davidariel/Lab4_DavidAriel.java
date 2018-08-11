@@ -22,49 +22,53 @@ public class Lab4_DavidAriel {
     static int opcion;
 
     public static void main(String[] args) {
+        EVA00 e00 = new EVA00();
+        EVA01 e01 = new EVA01();
+        EVA02 e02 = new EVA02();
+        EVAPM epm = new EVAPM();
         try {
             System.out.println("Bienvenido!!!!!!!!!!!!!!!!!!!!!!!");
-            System.out.println("............................-*@WWWWWWWWWWWW+...............\n" +
-"\n" +
-"...........................+WWWWWWWWWWWWWW+................\n" +
-"\n" +
-"................**.........@WWWWWWWWWWWWWWWWW@+............\n" +
-"\n" +
-"................=W+........#WWWWWWWWWWWWWWWWWWWWW=.........\n" +
-"\n" +
-"..................#@-.....+WWWWWWWWWWWWWWWWWWWWWWWW+.......\n" +
-"\n" +
-"....................#=...=WWWWWWWWWWWWWWWWWWWWWWWWWW@......\n" +
-"\n" +
-".....................-#WWWWWWWWWWWWWWWWWWWWWWWWWWWW#=......\n" +
-"\n" +
-"........-:::-...-:::-::+WWWWWWWWWWWWWWWWW@#WWWW@@-.........\n" +
-"\n" +
-"..........#WW@-...#...=WW+@WWWWWWWWWWWWWWW@#+..............\n" +
-"\n" +
-"..........=.#WW=..=...=WW-.#WWWWWWWWWWWWWWWWWW@-...........\n" +
-"\n" +
-"..........=..:WWW:=...=WW#@@.:WWWWWWWWWWWWWWWWW#...........\n" +
-"\n" +
-"..........=....=WW#...=WW-.*..-*WWWWWWWWWWWWWWWW#..........\n" +
-"\n" +
-"..........#.....-@#...=WW:...*#..*WWWWWWWWWWWWWWW:.........\n" +
-"\n" +
-"..................-................=WWWWWWWWWWWWW#.........\n" +
-"\n" +
-"........................:WW#+*@W=.-#WWWWWWWWWWWWWW=........\n" +
-"\n" +
-"........................-WW=...WW#..@WW#WWWWWWWWWW=........\n" +
-"\n" +
-"........................-WW=..*WW:..-@W@-#WWWWWWWW#........\n" +
-"\n" +
-"........................-WW=:WW@.....-WW#++@WWWWWW#........\n" +
-"\n" +
-"........................-WW=..#WW+....:WW+..-@WWWW#........\n" +
-"\n" +
-".......................:=@@@+-.+@@#:...+*.....-@WW=........\n" +
-"\n" +
-"................................................:WW.....");
+            System.out.println("............................-*@WWWWWWWWWWWW+...............\n"
+                    + "\n"
+                    + "...........................+WWWWWWWWWWWWWW+................\n"
+                    + "\n"
+                    + "................**.........@WWWWWWWWWWWWWWWWW@+............\n"
+                    + "\n"
+                    + "................=W+........#WWWWWWWWWWWWWWWWWWWWW=.........\n"
+                    + "\n"
+                    + "..................#@-.....+WWWWWWWWWWWWWWWWWWWWWWWW+.......\n"
+                    + "\n"
+                    + "....................#=...=WWWWWWWWWWWWWWWWWWWWWWWWWW@......\n"
+                    + "\n"
+                    + ".....................-#WWWWWWWWWWWWWWWWWWWWWWWWWWWW#=......\n"
+                    + "\n"
+                    + "........-:::-...-:::-::+WWWWWWWWWWWWWWWWW@#WWWW@@-.........\n"
+                    + "\n"
+                    + "..........#WW@-...#...=WW+@WWWWWWWWWWWWWWW@#+..............\n"
+                    + "\n"
+                    + "..........=.#WW=..=...=WW-.#WWWWWWWWWWWWWWWWWW@-...........\n"
+                    + "\n"
+                    + "..........=..:WWW:=...=WW#@@.:WWWWWWWWWWWWWWWWW#...........\n"
+                    + "\n"
+                    + "..........=....=WW#...=WW-.*..-*WWWWWWWWWWWWWWWW#..........\n"
+                    + "\n"
+                    + "..........#.....-@#...=WW:...*#..*WWWWWWWWWWWWWWW:.........\n"
+                    + "\n"
+                    + "..................-................=WWWWWWWWWWWWW#.........\n"
+                    + "\n"
+                    + "........................:WW#+*@W=.-#WWWWWWWWWWWWWW=........\n"
+                    + "\n"
+                    + "........................-WW=...WW#..@WW#WWWWWWWWWW=........\n"
+                    + "\n"
+                    + "........................-WW=..*WW:..-@W@-#WWWWWWWW#........\n"
+                    + "\n"
+                    + "........................-WW=:WW@.....-WW#++@WWWWWW#........\n"
+                    + "\n"
+                    + "........................-WW=..#WW+....:WW+..-@WWWW#........\n"
+                    + "\n"
+                    + ".......................:=@@@+-.+@@#:...+*.....-@WW=........\n"
+                    + "\n"
+                    + "................................................:WW.....");
             crear();
             char resp = 's';
             do {
@@ -198,42 +202,51 @@ public class Lab4_DavidAriel {
                         Object mat[][] = new Object[10][10];
                         for (Evas l : e) {
                             if (l instanceof EVA00) {
-                                mat[((EVA00)l).getY()][((EVA00)l).getX()]=l;
+                                mat[((EVA00) l).getY()][((EVA00) l).getX()] = l;
                             }
                             if (l instanceof EVA01) {
-                                mat[((EVA01)l).getY()][((EVA01)l).getX()]=l;
-                            }if (l instanceof EVA02) {
-                                mat[((EVA02)l).getY()][((EVA02)l).getX()]=l;
-                            }if (l instanceof EVAPM) {
-                                mat[((EVAPM)l).getY()][((EVAPM)l).getX()]=l;
+                                mat[((EVA01) l).getY()][((EVA01) l).getX()] = l;
+                            }
+                            if (l instanceof EVA02) {
+                                mat[((EVA02) l).getY()][((EVA02) l).getX()] = l;
+                            }
+                            if (l instanceof EVAPM) {
+                                mat[((EVAPM) l).getY()][((EVAPM) l).getX()] = l;
                             }
                         }
                         for (Angel an : a) {
                             if (an instanceof Sachiel) {
-                                mat[((Sachiel)an).getY()][((Sachiel)an).getX()]=an;
+                                mat[((Sachiel) an).getY()][((Sachiel) an).getX()] = an;
                             }
                             if (an instanceof Ramiel) {
-                                mat[((Ramiel)an).getY()][((Ramiel)an).getX()]=an;
-                            }if (an instanceof Zeruel) {
-                                mat[((Zeruel)an).getY()][((Zeruel)an).getX()]=an;
+                                mat[((Ramiel) an).getY()][((Ramiel) an).getX()] = an;
+                            }
+                            if (an instanceof Zeruel) {
+                                mat[((Zeruel) an).getY()][((Zeruel) an).getX()] = an;
+
                             }
                         }
-                        
-                        /*mat[0][2] = 'R';
-                        mat[0][7] = 'R';
-                        mat[1][1] = 'Z';
-                        mat[1][8] = 'Z';
-                        mat[1][4] = 'S';
-                        mat[1][5] = 'S';
-                        mat[3][7] = 'Z';
-                        mat[7][2] = 'E';
-                        mat[9][0] = 'P';
-                        mat[9][2] = 'P';
-                        mat[9][4] = 'E';
-                        mat[9][6] = 'E';
-                        mat[9][7] = 'P';
-                        mat[9][9] = 'P';*/
                         imprimir(mat);
+                        while (a != null && e != null) {
+                            System.out.println("jugador 1");
+                            System.out.println("Ingrese el eva que va a mover: ");
+                            int cont = 0;
+                            for (Evas l : e) {
+                                if (l instanceof EVA00) {
+                                    System.out.println(cont+((EVA00) l).toString());
+                                }
+                                if (l instanceof EVA01) {
+                                    System.out.println(cont+((EVA01) l).toString());
+                                }
+                                if (l instanceof EVA02) {
+                                    System.out.println(cont+((EVA02) l).toString());
+                                }
+                                if (l instanceof EVAPM) {
+                                    System.out.println(cont+((EVAPM) l).toString());
+                                }
+                                cont++;
+                            }
+                        }
                         break;
                     case 5:
                         System.out.println("Se termino todo :(");
