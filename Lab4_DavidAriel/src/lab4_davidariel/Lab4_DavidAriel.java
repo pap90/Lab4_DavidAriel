@@ -233,19 +233,35 @@ public class Lab4_DavidAriel {
                             int cont = 0;
                             for (Evas l : e) {
                                 if (l instanceof EVA00) {
-                                    System.out.println(cont+((EVA00) l).toString());
+                                    System.out.println(cont + ((EVA00) l).toString());
                                 }
                                 if (l instanceof EVA01) {
-                                    System.out.println(cont+((EVA01) l).toString());
+                                    System.out.println(cont + ((EVA01) l).toString());
                                 }
                                 if (l instanceof EVA02) {
-                                    System.out.println(cont+((EVA02) l).toString());
+                                    System.out.println(cont + ((EVA02) l).toString());
                                 }
                                 if (l instanceof EVAPM) {
-                                    System.out.println(cont+((EVAPM) l).toString());
+                                    System.out.println(cont + ((EVAPM) l).toString());
                                 }
                                 cont++;
                             }
+                            System.out.println("Ingrese el numero de posicion de eva: ");
+                            int posi = leer.nextInt();
+                            if (e.get(posi) instanceof EVA00) {
+                                ((EVA00)e.get(posi)).moverse(mat);
+                            }
+                            if (e.get(posi) instanceof EVA01) {
+                                ((EVA01)e.get(posi)).moverse(mat);
+                            }
+                            if (e.get(posi) instanceof EVA02) {
+                                ((EVA02)e.get(posi)).moverse(mat);
+                            }
+                            if (e.get(posi) instanceof EVAPM) {
+                                ((EVAPM)e.get(posi)).moverse(mat);
+                            }
+                            imprimir(mat);
+                                    
                         }
                         break;
                     case 5:
