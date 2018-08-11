@@ -23,6 +23,48 @@ public class Lab4_DavidAriel {
 
     public static void main(String[] args) {
         try {
+            System.out.println("Bienvenido!!!!!!!!!!!!!!!!!!!!!!!");
+            System.out.println("............................-*@WWWWWWWWWWWW+...............\n" +
+"\n" +
+"...........................+WWWWWWWWWWWWWW+................\n" +
+"\n" +
+"................**.........@WWWWWWWWWWWWWWWWW@+............\n" +
+"\n" +
+"................=W+........#WWWWWWWWWWWWWWWWWWWWW=.........\n" +
+"\n" +
+"..................#@-.....+WWWWWWWWWWWWWWWWWWWWWWWW+.......\n" +
+"\n" +
+"....................#=...=WWWWWWWWWWWWWWWWWWWWWWWWWW@......\n" +
+"\n" +
+".....................-#WWWWWWWWWWWWWWWWWWWWWWWWWWWW#=......\n" +
+"\n" +
+"........-:::-...-:::-::+WWWWWWWWWWWWWWWWW@#WWWW@@-.........\n" +
+"\n" +
+"..........#WW@-...#...=WW+@WWWWWWWWWWWWWWW@#+..............\n" +
+"\n" +
+"..........=.#WW=..=...=WW-.#WWWWWWWWWWWWWWWWWW@-...........\n" +
+"\n" +
+"..........=..:WWW:=...=WW#@@.:WWWWWWWWWWWWWWWWW#...........\n" +
+"\n" +
+"..........=....=WW#...=WW-.*..-*WWWWWWWWWWWWWWWW#..........\n" +
+"\n" +
+"..........#.....-@#...=WW:...*#..*WWWWWWWWWWWWWWW:.........\n" +
+"\n" +
+"..................-................=WWWWWWWWWWWWW#.........\n" +
+"\n" +
+"........................:WW#+*@W=.-#WWWWWWWWWWWWWW=........\n" +
+"\n" +
+"........................-WW=...WW#..@WW#WWWWWWWWWW=........\n" +
+"\n" +
+"........................-WW=..*WW:..-@W@-#WWWWWWWW#........\n" +
+"\n" +
+"........................-WW=:WW@.....-WW#++@WWWWWW#........\n" +
+"\n" +
+"........................-WW=..#WW+....:WW+..-@WWWW#........\n" +
+"\n" +
+".......................:=@@@+-.+@@#:...+*.....-@WW=........\n" +
+"\n" +
+"................................................:WW.....");
             crear();
             char resp = 's';
             do {

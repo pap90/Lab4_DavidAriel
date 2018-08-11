@@ -12,10 +12,11 @@ import java.util.Scanner;
  *
  * @author david
  */
-public class EVA02 extends Evas{
-    
+public class EVA02 extends Evas {
+
     private int y;
     private int x;
+
     public EVA02() {
     }
 
@@ -41,28 +42,34 @@ public class EVA02 extends Evas{
         this.x = x;
     }
 
-    
-
     @Override
     public String toString() {
         return "EVA02";
     }
+
     @Override
-    public void moverse(Object[][] matriz){
-        Scanner sc=new Scanner(System.in);
+    public void moverse(Object[][] matriz) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("tip: solo puede mover un espacio");
         System.out.println("Ingrese coordenada x: ");
-        int x=sc.nextInt();
+        int x = sc.nextInt();
         System.out.println("Ingrese la coordenada y: ");
-        int y=sc.nextInt();
-        if ((x==this.x&&this.y!=y)||(x!=this.x&&y==this.y)) {
-                matriz[this.y][this.x]=null;
-                this.y=y;
-                this.x=x;
-                matriz[y][x]=this;
-            
-            
-        };        
+        int y = sc.nextInt();
+        if ((x == this.x && this.y != y) || (x != this.x && y == this.y)) {
+            matriz[this.y][this.x] = null;
+            this.y = y;
+            this.x = x;
+            matriz[y][x] = this;
+
+        };
     }
-    
+
+    @Override
+    public void atacar() {
+         
+        
+        
+        
+    }
+
 }
