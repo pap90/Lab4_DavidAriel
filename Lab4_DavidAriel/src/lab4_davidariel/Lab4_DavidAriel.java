@@ -156,13 +156,17 @@ public class Lab4_DavidAriel {
                         Object mat[][] = new Object[10][10];
                         for (Evas l : e) {
                             if (l instanceof EVA00) {
-                                mat[((EVA00)l).getX()][((EVA00)l).getY()]=l;
+                                mat[((EVA00)l).getY()][((EVA00)l).getX()]=l;
                             }
-                            if (true) {
-                                
+                            if (l instanceof EVA01) {
+                                mat[((EVA01)l).getY()][((EVA01)l).getX()]=l;
+                            }if (l instanceof EVA02) {
+                                mat[((EVA02)l).getY()][((EVA02)l).getX()]=l;
+                            }if (l instanceof EVAPM) {
+                                mat[((EVAPM)l).getY()][((EVAPM)l).getX()]=l;
                             }
                         }
-                        mat[0][2] = 'R';
+                        /*mat[0][2] = 'R';
                         mat[0][7] = 'R';
                         mat[1][1] = 'Z';
                         mat[1][8] = 'Z';
@@ -175,7 +179,7 @@ public class Lab4_DavidAriel {
                         mat[9][4] = 'E';
                         mat[9][6] = 'E';
                         mat[9][7] = 'P';
-                        mat[9][9] = 'P';
+                        mat[9][9] = 'P';*/
                         imprimir(mat);
                         break;
                     case 5:
