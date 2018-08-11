@@ -154,6 +154,14 @@ public class Lab4_DavidAriel {
                         break;
                     case 4:
                         Object mat[][] = new Object[10][10];
+                        for (Evas l : e) {
+                            if (l instanceof EVA00) {
+                                mat[((EVA00)l).getX()][((EVA00)l).getY()]=l;
+                            }
+                            if (true) {
+                                
+                            }
+                        }
                         mat[0][2] = 'R';
                         mat[0][7] = 'R';
                         mat[1][1] = 'Z';
