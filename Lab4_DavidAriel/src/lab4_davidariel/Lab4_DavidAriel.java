@@ -171,9 +171,9 @@ public class Lab4_DavidAriel {
                                 mat[((Sachiel)an).getY()][((Sachiel)an).getX()]=an;
                             }
                             if (an instanceof Ramiel) {
-                                mat[((Ramiel)an).getY()][((Ramiel)an).getY()]=an;
+                                mat[((Ramiel)an).getY()][((Ramiel)an).getX()]=an;
                             }if (an instanceof Zeruel) {
-                                mat[((Zeruel)an).getY()][((Zeruel)an).getY()]=an;
+                                mat[((Zeruel)an).getY()][((Zeruel)an).getX()]=an;
                             }
                         }
                         
@@ -258,7 +258,7 @@ public class Lab4_DavidAriel {
         e.add(new EVA00(7, 2, Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
         e.add(new EVA00(9, 6, Color.yellow, 1997, 200, "zelda", 3, "japon", null, 205, 0));
 
-        e.add(new EVA01(9, 4, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
+        e.add(new EVA01(4, 9, Color.yellow, 1995, 400, "link", 4, "estados", null, 507, 0));
 
     }
 
