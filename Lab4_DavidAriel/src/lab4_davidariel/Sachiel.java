@@ -45,7 +45,7 @@ public class Sachiel extends Angel {
 
     @Override
     public String toString() {
-        return "Sachiel{" + "y=" + y + ", x=" + x + '}';
+        return "Sachiel";
     }
 
     @Override

@@ -45,7 +45,7 @@ public class Zeruel extends Angel {
 
     @Override
     public String toString() {
-        return "Zeruel{" + "y=" + y + ", x=" + x + '}';
+        return "Zeruel";
     }
 
     @Override

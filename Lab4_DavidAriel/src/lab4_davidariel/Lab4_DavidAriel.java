@@ -166,6 +166,17 @@ public class Lab4_DavidAriel {
                                 mat[((EVAPM)l).getY()][((EVAPM)l).getX()]=l;
                             }
                         }
+                        for (Angel an : a) {
+                            if (an instanceof Sachiel) {
+                                mat[((Sachiel)an).getY()][((Sachiel)an).getX()]=an;
+                            }
+                            if (an instanceof Ramiel) {
+                                mat[((Ramiel)an).getY()][((Ramiel)an).getY()]=an;
+                            }if (an instanceof Zeruel) {
+                                mat[((Zeruel)an).getY()][((Zeruel)an).getY()]=an;
+                            }
+                        }
+                        
                         /*mat[0][2] = 'R';
                         mat[0][7] = 'R';
                         mat[1][1] = 'Z';

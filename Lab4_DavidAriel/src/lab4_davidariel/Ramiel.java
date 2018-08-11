@@ -45,7 +45,7 @@ public class Ramiel extends Angel {
 
     @Override
     public String toString() {
-        return "Ramiel{" + "y=" + y + ", x=" + x + '}';
+        return "Ramiel";
     }
 
     @Override
