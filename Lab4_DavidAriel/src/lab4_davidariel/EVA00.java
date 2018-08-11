@@ -45,7 +45,7 @@ public class EVA00 extends Evas{
 
     @Override
     public String toString() {
-        return "EVA00"+super.toString();
+        return "EVA00";
     }
 
     @Override

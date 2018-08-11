@@ -46,7 +46,7 @@ public class EVAPM extends Evas {
 
     @Override
     public String toString() {
-        return "EVAPM" + super.toString();
+        return "EVAPM";
     }
 
     @Override

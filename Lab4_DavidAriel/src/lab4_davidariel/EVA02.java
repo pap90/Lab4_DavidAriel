@@ -45,7 +45,7 @@ public class EVA02 extends Evas{
 
     @Override
     public String toString() {
-        return "EVA02"+super.toString();
+        return "EVA02";
     }
     @Override
     public void moverse(Object[][] matriz){
